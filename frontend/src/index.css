@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-gray-50 text-gray-900; }
+}
+
+@layer components {
+  .reputation-bar { @apply w-full h-3 bg-gray-200 rounded-full overflow-hidden; }
+  .reputation-fill { @apply h-full bg-gradient-to-r from-canopy-400 to-canopy-600 rounded-full transition-all duration-500; }
+  .card { @apply bg-white rounded-xl shadow-sm border border-gray-100 p-6; }
+  .card-hover { @apply hover:shadow-md transition-shadow cursor-pointer; }
+  .btn-primary { @apply px-4 py-2 bg-canopy-600 text-white rounded-lg hover:bg-canopy-700 transition-colors font-medium; }
+  .btn-secondary { @apply px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors font-medium; }
+  .btn-danger { @apply px-4 py-2 bg-red-50 text-red-600 rounded-lg hover:bg-red-100 transition-colors font-medium; }
+  .input { @apply w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-canopy-500 focus:border-transparent; }
+  .badge-sbt { @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold border-2; }
+}
